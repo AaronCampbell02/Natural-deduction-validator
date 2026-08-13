@@ -1,0 +1,12 @@
+GIVEN A
+GIVEN B
+DERIVE A AND B
+ASSUME P
+    APPLY AND_INTRO A, B
+    ASSUME NOT Q
+        APPLY OR_INTRO A, B
+    END
+    APPLY AND_ELIM A, A AND B
+CONCLUDE
+
+# should fail not closed assume

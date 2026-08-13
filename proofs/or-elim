@@ -1,0 +1,12 @@
+### 
+∨-Elimination: 
+    from a disjunction A ∨ B and the negation of a disjunct ¬A, derive the other disjunct B
+###
+
+GIVEN A OR B
+GIVEN NOT A
+DERIVE B
+
+APPLY OR_ELIM A OR B, NOT A      # yields B 
+
+CONCLUDE

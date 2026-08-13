@@ -1,0 +1,20 @@
+### 
+Negation / Contradiction Rules:
+    ¬-Introduction: a negation ¬A may be asserted after a subproof, with A as its hypothesis containing ⊥    
+    ¬-Elimination: a contradiction (⊥) may be inferred from a pair of conflicting premises A and ¬A
+    
+Dependencies: subproofs
+###
+
+GIVEN P IMP Q                    
+GIVEN NOT Q   
+DERIVE NOT P  
+
+ASSUME P                         # push(P)
+    APPLY IMP_ELIM P, P IMP Q    # yield Q
+    APPLY NOT_ELIM Q, NOT Q      # yield ⊥
+END                              # pop(P)
+
+APPLY NOT_INTRO P, P             # yield ¬P 
+
+CONCLUDE                     

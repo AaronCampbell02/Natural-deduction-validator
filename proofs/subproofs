@@ -1,0 +1,22 @@
+### 
+Subproofs:
+    A test for non-nested subproofs
+
+Dependencies: AND_INTRO
+###
+
+GIVEN A 
+GIVEN B
+DERIVE A AND B
+
+ASSUME C                  # push(C)
+    APPLY AND_INTRO A, C  # yield A && C
+END                       # pop(C)
+
+ASSUME C                  # push(C)
+    APPLY AND_INTRO B, C  # yield B && C
+END                       # pop(C)
+
+APPLY AND_INTRO A, B      # yield A && B
+
+CONCLUDE

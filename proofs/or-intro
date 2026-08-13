@@ -1,0 +1,11 @@
+### 
+∨-Introduction: 
+    A disjunction A∨B may be inferred from either disjunct A or B
+###
+
+GIVEN A
+DERIVE A OR B
+
+APPLY OR_INTRO A, B      # yields A OR B 
+
+CONCLUDE

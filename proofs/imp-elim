@@ -1,0 +1,12 @@
+### 
+→-Elimination: 
+    A consequent B may be inferred where the antecedent A and implication A→B both hold
+###
+
+GIVEN A
+GIVEN A -> B
+DERIVE B
+
+APPLY IMP_ELIM A, A -> B  # yields B
+
+CONCLUDE

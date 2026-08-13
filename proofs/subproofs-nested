@@ -1,0 +1,24 @@
+### 
+Nested Subproofs:
+    A test for nested subproofs (depth two)
+
+Dependencies: AND_INTRO
+###
+
+GIVEN A 
+GIVEN B
+DERIVE A AND B
+
+ASSUME C                      # push(C)
+
+    APPLY AND_INTRO A, C      # yield A && C
+
+    ASSUME D                  # push(D)
+        APPLY AND_INTRO C, D  # yield C && D
+    END                       # pop(D)
+
+END                           # pop(C)
+
+APPLY AND_INTRO A, B          # yield A && B
+
+CONCLUDE

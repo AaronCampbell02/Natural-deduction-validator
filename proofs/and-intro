@@ -1,0 +1,12 @@
+### 
+∧-Introduction:
+    A conjunction A ∧ B may be inferred from its two conjuncts A, B
+###
+
+GIVEN A
+GIVEN B
+DERIVE A AND B
+
+APPLY AND_INTRO A, B        # yields A ∧ B
+
+CONCLUDE

@@ -1,0 +1,15 @@
+GIVEN A IMP NOT B
+DERIVE B IMP NOT A
+
+ASSUME B
+
+    ASSUME A
+        APPLY IMP_ELIM A, A IMP NOT B   # yields NOT B
+        APPLY NOT_ELIM B, NOT B     # yields contradiction
+    END
+    APPLY NOT_INTRO A, A # yields NOT A
+END
+
+APPLY IMP_INTRO B, NOT A    # yields B IMP NOT A
+
+CONCLUDE

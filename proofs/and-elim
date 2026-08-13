@@ -1,0 +1,11 @@
+### 
+∧-Elimination:
+    A conjunct A may be inferred from a conjunction A ∧ B
+###
+
+GIVEN P && Q
+DERIVE Q
+
+APPLY AND_ELIM P, P && Q   # yields Q 
+
+CONCLUDE

@@ -1,0 +1,19 @@
+### 
+→-Introduction: 
+    Implication A→B may be introduced if B is in scope given A
+
+Dependencies: AND_INTRO
+###
+
+GIVEN A AND B
+DERIVE A -> B
+
+ASSUME A
+    APPLY AND_ELIM A, A AND B  # yield B given A
+END
+
+APPLY IMP_INTRO A, B  # yield A IMP B
+
+CONCLUDE
+
+
