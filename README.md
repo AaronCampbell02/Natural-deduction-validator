@@ -17,13 +17,13 @@ Proofs are written as followed
 Given ... Derive ...
 with a sequence of Apply rule f1 f2, assume lit
 
-///
+```
 GIVEN P
 GIVEN Q
 DERIVE P AND Q
 APPLY AND_INTRO P, Q
 CONCLUDE
-///
+```
 
 The program is run by the command
 
